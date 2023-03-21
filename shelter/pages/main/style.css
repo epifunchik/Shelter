@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 
 body{
     max-width: 1280px;
@@ -27,30 +30,24 @@ h3{
     font-weight: 400;
     font-size: 35px;
     line-height: 45.5px;
-    letter-spacing: 6%;
+    letter-spacing: 2px;
 }
-.p, li{
+p, li{
    font-family: Arial, Helvetica, sans-serif;
    font-size: 15px;
    line-height: 24px; 
 }
-.heder-logo{
-    font-size: 13px;
-    line-height: 14.95px;
-    letter-spacing: 2px;
-    /*color: #FFFFFF;*/
-    align-items: baseline;
-}
+
 .start-screen{
     margin: 0;
     background: linear-gradient(to top left, #211F20, #5B483A);
+    padding-left: 40px;
+    padding-right: 30px;
 }
-
+/*  Header  */
 .header{
     padding-top: 40px;
     padding-bottom: 30px;
-    padding-left: 40px;
-    padding-right: 30px;
     grid-template-rows: 65px;
     display: grid;
     grid-template-columns: 184px 453px;
@@ -64,8 +61,9 @@ h3{
 .header-logo{
     font-size: 13px;
     line-height: 14.95px;
-    letter-spacing: 10%;
-    color: #FFFFFF;
+    letter-spacing: 1.2px;
+    margin-top: 10px;
+    margin-left: 5px;
 }
 .navigation{
     color: #FAFAFA;
@@ -74,4 +72,106 @@ h3{
     justify-content: space-between;
     padding-right: 10px;
     padding-left: 0;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: #F1CDB3;
+}
+.nav-link:hover{
+border-bottom: 3px #F1CDB3 solid;
+padding-bottom: 5px;
+}
+.nav-link-about{
+    text-decoration: none;
+    color: #F1CDB3;
+    border-bottom: 3px #F1CDB3 solid;
+    padding-bottom: 5px;
+}
+
+/*  Start screen  */
+.not-only{
+    display: flex;
+    height: 728px;
+    margin-top: 45px;
+    justify-content: space-between;
+}
+.not-only-block{
+    display: grid;
+    grid-template-columns: 460px;
+    grid-template-rows: 181px 124px 56px;
+    margin-top: 126px;
+    color: #ffffff;
+}
+.not-only-text{
+    color: #CDCDCD;
+}
+.not-only-img{
+    display: flex;
+
+}
+img{
+  width: min-content;
+}
+button{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 22.1px;
+    width: 208px;
+    border-radius: 30px;
+    letter-spacing: 1px;
+}
+
+/*   About    */
+
+.about{
+    display: grid;
+    grid-template-columns: 49% 51%;
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-top: 80px;
+    margin-bottom: 100px;
+}
+.about-img{
+    padding-left: 175px;
+}
+.about-text{
+    padding-left: 7px;
+    padding-right: 175px;
+}
+.about-title{
+    margin-bottom: 24px;
+    margin-top: 15px;
+}
+/*   Our pets   */
+
+.our-friends{
+    display: grid;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 45px;
+    background-color: #F6F6F6;
+    grid-template-rows: 125px 480px 70px;
+    text-align: center;
+}
+/*.our-pets-title{
+    margin-right: 25px;
+}*/
+.our-friends-slider{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.slider-btn{
+    width: 50px;
+    height: 50px;
+    margin-top: 75px;
+    border: #F1CDB3;
+    border-style: solid;
+}
+.slider-pets{
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
 }
