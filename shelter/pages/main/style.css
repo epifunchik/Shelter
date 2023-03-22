@@ -152,7 +152,7 @@ button{
     padding-right: 40px;
     padding-top: 45px;
     background-color: #F6F6F6;
-    grid-template-rows: 125px 480px 70px;
+    grid-template-rows: 152px 529px 147px;
     text-align: center;
 }
 /*.our-pets-title{
@@ -166,7 +166,7 @@ button{
 .slider-btn{
     width: 50px;
     height: 50px;
-    margin-top: 75px;
+    margin-bottom: 30px;
     border: #F1CDB3;
     border-style: solid;
 }
@@ -174,4 +174,155 @@ button{
     display: flex;
     justify-content: space-between;
     width: 1000px;
+    
+}
+.our-friends-slider-element{
+    display: grid;
+    grid-template-rows: 275px 83px 82px;
+    margin-top: -30px;
+    justify-items: center;
+    background-color: #FAFAFA;
+
+}
+.our-pets-card-btn{
+    width: 190px;
+    border-color: #F1CDB3;
+    color: #292929;
+    border-style: solid;
+    background-color: #FAFAFA;
+    height: 52px;
+}
+h4{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: 100;
+}
+.our-friends-button{
+    width: 262px;
+    height: 50px;
+    background-color: #F1CDB3;
+    color: #292929;
+    border-style: none;
+}
+/*   Help   */
+
+.help{
+    display: grid;
+    grid-template-rows: 90px 413px;
+    margin-top: 80px;
+    text-align: center;
+}
+
+.help-title{
+    margin-top: 5px;
+    color: #545454;
+}
+.help-container-items{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 60px;
+}
+.help-item{
+padding-left: 60px;
+padding-right: 60px;
+}
+.help-item-text{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 1.7px;
+    margin-top: 25px;
+}
+/*    In addition   */
+
+.in-addition{
+    display: grid;
+    grid-template-columns: 540px 380px;
+    background-color: #F6F6F6;
+    margin-top: 33px;
+    padding-top: 45px;
+    padding-left: 149px;
+    grid-gap: 30px;
+    padding-bottom: 87px;
+}
+.in-addition-img{
+    padding-top: 40px;
+    padding-left: 27px;
+    padding-right: 30px;
+}
+.in-addition-text{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-rows: 108px 33px 43px;
+}
+.in-addition-paragraf{
+    letter-spacing: 0.85px;
+}
+.credit-card{
+    background-color: #F1CDB3;
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    letter-spacing: 1.2px;
+    color: #545454;
+    text-align: center;
+    width: 350px;
+    border-radius: 9px;
+}
+.card-img{
+    margin-left: -5px;
+    margin-right: 13px;
+    padding-top: 7px;
+}
+
+.italic{
+    margin-top: 0px;
+    font-style: italic;
+    font-size: 12px;
+    line-height: 18px;
+    color:#B2B2B2
+}
+
+/*    Footer   */
+
+footer{
+    display: grid;
+    grid-template-columns: 280px 301px 310px;
+    grid-gap: 160px;
+    padding-left: 40px;
+    padding-top: 23px;
+    background: linear-gradient(to top left, #211F20, #5B483A); 
+}
+.footer-title{
+    color: #ffffff;
+}
+.footer-adress{
+    display: grid;
+    grid-template-columns: 40px 260px;
+    color:#F1CDB3
+}
+
+.footer-cols{
+    display: grid;
+    grid-template-rows: 160px 79px;
+}
+.footer-contacts{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    line-height: 115%;
+    margin-top: 0px;
+    letter-spacing: 1.3px;
+}
+.footer-contacts-mail{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    line-height: 115%;
+    padding-left: 20px;
+    margin-top: 5px;
+    letter-spacing: 1.3px;
+}
+.footer-puppy-img{
+    padding-top: 20px;
 }
