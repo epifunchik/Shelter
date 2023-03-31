@@ -95,7 +95,12 @@ p, li{
     border-bottom: 3px #F1CDB3 solid;
     padding-bottom: 5px;
 }
-
+@media screen and (max-width: 1199px) {
+    .header{
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+}
 /*  Start screen  */
 .not-only{
     max-width: 1200px;
@@ -106,6 +111,7 @@ p, li{
     margin-top: 75px;
     justify-content: space-between;
 }
+
 .not-only-block{
     display: flex;
     flex-direction: column;
@@ -138,10 +144,35 @@ button{
     cursor: pointer;
 }
 button:hover{
-    background-color: #FDDCC4;
+    color: #000;
     transition: all 0.3s;
 }
-
+@media screen and (max-width: 1000px) {
+    .not-only{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2%;
+        
+    }
+    .not-only-block{
+        align-items: center;
+        padding-right: 20%;
+        margin-top: 0px;
+    }
+    .not-only-text{
+        padding-left: 25%;
+        padding-right: 0%;
+    }
+    .not-only-img{
+        padding-top: 13%;
+        width: 74vw;
+        padding-left: 18%;
+    }
+    .not-only-button{
+        margin-left: 37%;
+    }
+}
 /*   About    */
 
 .about{
@@ -154,6 +185,7 @@ button:hover{
     margin-bottom: 100px;
     gap: 0.5%;
 }
+
 .about-img{
     padding-left: 30%;
     width: auto;
@@ -167,6 +199,23 @@ button:hover{
 }
 .about-paragraf{
     color:#4C4C4C;
+}
+@media screen and (max-width: 1000px) {
+    .about{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-top: 8%;
+    }
+    .about-text{
+        padding-right: 22%;
+        padding-left: 22%;
+    }
+    .about-img{
+        width: 39vw;
+        padding-left: 0px;
+        margin-top: 9%;
+    }
 }
 /*   Our pets   */
 
@@ -214,10 +263,32 @@ button:hover{
     border-radius: 9px;
 
 }
+@media screen and (max-width: 1000px) {
+    .our-friends-slider-element.last{
+        display: none;
+    }
+    .our-friends-slider{
+        padding-left: 2.5%;
+        padding-right: 2.5%;
+        gap: 10px;
+    }
+    .slider-pets{
+        margin-top: 0;
+        gap: 45px;
+    }
+    .our-friends-slider-img{
+        width: 35vw;
+        padding-top: 3px;
+    } 
+    .slider-btn-prev,.slider-btn-next{
+       width: 70px;
+    }
+}
+
 .our-friends-slider-element:hover{
-box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
-transition: all 0.5s;
-cursor: pointer;
+    box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+    transition: all 0.5s;
+    cursor: pointer;
 }
 
 
@@ -289,6 +360,26 @@ h4{
     letter-spacing: 1.7px;
     margin-top: 25px;
 }
+@media screen and (max-width: 1000px) {
+    .help{
+        grid-template-rows: 92px auto;
+        padding-bottom: 7px;
+    }
+    .help-container-items{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        margin-left: 6vw;
+        margin-right: 6vw;
+    }
+    .help-item{
+
+        padding-bottom: 5vw;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+}
 /*    In addition   */
 
 .in-addition{
@@ -303,6 +394,7 @@ h4{
     grid-gap: 50px;
     padding-bottom: 87px;
 }
+
 .in-addition-img{
     padding-top: 43px;
     width: auto;
@@ -351,6 +443,24 @@ h4{
         grid-gap: 6%;
     }
 }
+@media screen and (max-width: 1000px) {
+    .in-addition{
+        display: flex;
+        flex-direction: column-reverse;  
+        align-items: center;
+        padding-left: 19.5vw;
+        padding-right: 22vw;
+    }
+    .in-addition-text{
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    .in-addition-img{
+        padding-top: 0;
+        padding-bottom: 1.5vw;
+        padding-left: 2.5vw;
+    }
+}
 /*    Footer   */
 
 footer{
@@ -364,6 +474,14 @@ footer{
     padding-top: 23px;
     background: linear-gradient(to top left, #211F20, #5B483A); 
 }
+@media screen and (max-width: 1199px){
+    footer{
+    grid-template-columns: 22vw 22vw 34vw;
+    grid-gap: 9vw;
+    padding-left: 13vw;  
+    }
+}
+
 .footer-title{
     color: #ffffff;
 }
@@ -434,4 +552,32 @@ footer{
 .footer-contacts-img{
     width: auto;
     padding-right: 16px;
+}
+@media screen and (max-width: 1000px){
+    footer{
+        justify-items: center;
+        grid-template-areas:
+        "a b"
+        "c c";
+        padding-left: 10vw;
+        padding-right: 10vw;
+        padding-top: 0;
+        grid-template-columns: 1fr;
+        column-gap: 5vw;
+     }
+    .footer-cols.contacts{
+        grid-area: a;
+    }
+    .footer-cols.adresses{
+        grid-area: b;
+    }
+    .footer-puppy-img{
+        grid-area: c;
+        margin-top: -5vw;
+    }
+    .footer-cols{
+        grid-template-rows: 158px 85px;
+        margin-top: -1vw;
+    }
+   
 }
