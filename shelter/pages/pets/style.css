@@ -286,7 +286,7 @@ h4{
     .slider-buttons {
         padding-top: 4.5vw;
         padding-bottom: 4vw;
-        grid-template-columns: repeat(5, 19.5vw);
+        grid-template-columns: repeat(5, 62px);
         padding-left: 4vw;
     }
 }
@@ -415,28 +415,30 @@ footer{
         display: flex;
         flex-direction: column;
         padding-top: 4vw;
-        gap:0
+        gap: 4px
     }
     .footer-cols{
-        grid-template-rows: 36vw 83px;
+        display: flex;
+        flex-direction: column;
     }
     .footer-title{
         text-align: center;
-        padding-right: 14vw;
     }
-    .footer-title.second{
-        padding-right: 7vw;
-    }
+    
     .footer-contacts-img{
-        padding-top: 2.5vw;
+        padding-top: 18px;
     }
     .footer-contacts-phone{
         padding-left: 9vw;
     }
     .footer-adress.second{
-        margin-left: -7vw;
+        margin-left: -21px;
+        margin-top: 7px;
     }
     .footer-contacts{
         margin-top: 3.5vw;
+    }
+    .footer-puppy-img{
+        margin-top: 10px;
     }
 }
