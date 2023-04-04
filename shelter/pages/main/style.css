@@ -144,7 +144,14 @@ p, li{
  .menu-btn:checked span::before{
     transform: rotateY('180deg');
  }
-
+ @media screen and (max-width: 767px){
+    .navigation{
+        display: none;
+    }
+    .menu-btn{
+        opacity: 100%;
+    }
+ }
 @media screen and (max-width: 680px){
     .header{
         padding-top: 3%;
@@ -153,16 +160,6 @@ p, li{
     }
     .header-logo{
         letter-spacing: 1.3px;
-    }
-   /* .header-container{
-        z-index: 999;
-        background-color: #edf2ec;
-    }*/
-    .navigation{
-        display: none;
-    }
-    .menu-btn{
-        opacity: 100%;
     }
 }
 /*  Start screen  */
