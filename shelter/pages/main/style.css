@@ -88,14 +88,11 @@ p, li{
     transition: all, 1.5s;
 
 }
-.nav-burger.hidden{
-position: relative;
 
-}
 
 @media screen and (max-width: 380px) {
     .nav-burger.active{
-    right: 8%;
+    right: 0;
     }
 }
 

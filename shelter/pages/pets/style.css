@@ -86,6 +86,11 @@ button:hover{
     transition: all, 1.5s;
 
 }
+@media screen and (max-width: 380px) {
+    .nav-burger.active{
+    right: 0;
+    }
+}
 .navigation{
     min-width: 443px;
     color: #FAFAFA;
@@ -137,7 +142,7 @@ button:hover{
 .menu-btn.active{
     margin-left: -22px; 
  }
- 
+
 #menu-toggle{
     display: block;
     opacity: 0;
