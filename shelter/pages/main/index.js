@@ -64,3 +64,31 @@ wrapper.addEventListener('click', function() {
 //     navLink[2].classList.remove('active');
 //     wrapper.classList.remove('active');
 // };
+
+//   Slider
+
+
+const slider = document.querySelector('.slider-pets');
+const sliderNext = document.querySelector('.slider-btn.next');
+const sliderPrev = document.querySelector('.slider-btn.prev');
+const sliderCards = document.querySelectorAll('.our-friends-slider-element')
+let width = document.documentElement.clientWidth;
+let step = 0;
+console.log(width, sliderCards, sliderNext);
+
+sliderNext.addEventListener('click', function(){
+let random = Math.floor(Math.random() * 7)
+    if(width > 1200){
+        width = 1000;
+    }
+    step = step + width
+slider.style.left = -step + 'px'
+})
+
+sliderPrev.addEventListener('click', function(){
+    if(width > 1200){
+        width = 1000;
+    }
+    step = step - width
+slider.style.left = width + 'px'
+})

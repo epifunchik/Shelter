@@ -416,16 +416,26 @@ button:hover{
     border-style: solid;
     background-color: #F6F6F6;
 }
-.slider-btn.next{
-    color: #D9D9D9;
+.slider-btn.prev:hover,
+.slider-btn.next:hover{
+background-color: #F1CDB3;
+cursor: pointer;
+}
+.slider-container{
+    overflow: hidden;
 }
 .slider-pets{
+    max-width: 1000px;
+    left: 0;
     display: flex;
     justify-content: space-between;
-    gap: 90px;
+    gap: 80px;
+    position: relative;
+    transition: all ease 2s;
     
 }
 .our-friends-slider-element{
+    min-width: 270px;
     display: grid;
     grid-template-rows: 275px 83px 82px;
     margin-top: -30px;
