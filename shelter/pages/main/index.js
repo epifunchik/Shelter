@@ -71,17 +71,20 @@ wrapper.addEventListener('click', function() {
 const slider = document.querySelector('.slider-pets');
 const sliderNext = document.querySelector('.slider-btn.next');
 const sliderPrev = document.querySelector('.slider-btn.prev');
-const sliderCards = document.querySelectorAll('.our-friends-slider-element')
+var sliderCards = document.querySelectorAll('.our-friends-slider-element')
 let width = document.documentElement.clientWidth;
 let step = 0;
 console.log(width, sliderCards, sliderNext);
 
 sliderNext.addEventListener('click', function(){
-let random = Math.floor(Math.random() * 7)
+let random = Math.floor(Math.random() * 8)
+console.log(random)
     if(width > 1200){
         width = 1000;
+    sliderCards[5] = sliderCards[random]
     }
     step = step + width
+    sliderCards[5] = sliderCards[4]
 slider.style.left = -step + 'px'
 })
 
@@ -92,3 +95,6 @@ sliderPrev.addEventListener('click', function(){
     step = step - width
 slider.style.left = width + 'px'
 })
+
+sliderCards[0] = sliderCards[1]
+console.log(sliderCards[0], sliderCards[1])
